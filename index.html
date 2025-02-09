@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description"
+    content="Elite Fitness offers a premium gym experience with world-class trainers, state-of-the-art equipment, and transformative workout programs.">
+  <meta name="keywords"
+    content="gym, fitness, training, workout, personal trainer, elite fitness, strength training, crossfit, yoga">
+  <meta name="author" content="Elite Fitness">
+  <meta name="theme-color" content="#8B0000">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ELITE FITNESS | Premium Gym & Fitness Center">
+  <meta property="og:description" content="Transform your body with world-class training at Elite Fitness">
+  <meta property="og:image" content="https://your-domain.com/images/og-image.jpg">
+  <meta property="og:url" content="https://your-domain.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ELITE FITNESS | Premium Gym & Fitness Center">
+  <meta name="twitter:description" content="Transform your body with world-class training at Elite Fitness">
+  <meta name="twitter:image" content="https://your-domain.com/images/twitter-card.jpg">
+
+  <title>ELITE FITNESS | Premium Gym & Fitness Center</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload Hero Video -->
+  <link rel="preload" as="video" href="" type="video/mp4">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-CORRECT-HASH-VALUE" crossorigin="anonymous">
+
+  <!-- Google Fonts with Display Swap -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+
+  <!-- Critical CSS Inline -->
+  <style>
+    /* Add critical CSS here */
+  </style>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- GSAP Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- Skip to Main Content Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-buttons" role="group" aria-label="Quick Actions">
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="floating-btn">
+      <i class="fas fa-moon" aria-hidden="true"></i>
+      <span class="visually-hidden">Toggle Dark Mode</span>
+    </button>
+    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="chat-btn floating-btn"
+      aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+      <span class="visually-hidden">Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Navigation -->
+  <header role="banner">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <div class="nav-brand">
+          <a href="#home" aria-label="Elite Fitness Home">
+            <h1>ELITE FITNESS</h1>
+          </a>
+        </div>
+
+        <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact" class="cta-button">Join Now</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-label="Welcome">
+      <video class="hero-video" autoplay muted loop playsinline poster="media/hero-poster.jpg" aria-hidden="true">
+        <source src="media/855828-hd_1920_1080_30fps (2).mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Transform Your Body, Elevate Your Life</h1>
+        <p class="hero-subtitle">World-class training — elite results</p>
+        <div class="hero-buttons">
+          <a href="#pricing" class="primary-button">Join Now</a>
+          <a href="#programs" class="secondary-button">Explore Plans</a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="mouse"></span>
+        <p>Scroll Down</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Why Choose Elite Fitness?</h2>
+          <p>Experience the difference with our premium facilities and expert guidance</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card" data-aos="fade-up">
+            <div class="feature-icon">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <h3>State-of-the-Art Equipment</h3>
+            <p>Access to premium fitness equipment and modern training facilities</p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="fas fa-user-friends"></i>
+            </div>
+            <h3>Expert Trainers</h3>
+            <p>Work with certified professionals who are dedicated to your success</p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Personalized Programs</h3>
+            <p>Custom fitness plans tailored to your specific goals and needs</p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Flexible Hours</h3>
+            <p>Open 24/7 to accommodate your busy schedule</p>
+          </div>
+        </div>
+
+        <div class="stats-container">
+          <div class="stat-item" data-aos="fade-up">
+            <span class="stat-number" data-target="1000">0</span>
+            <span class="stat-label">Active Members</span>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="stat-number" data-target="50">0</span>
+            <span class="stat-label">Expert Trainers</span>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-label">Weekly Classes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Our Programs</h2>
+          <p>Choose from our wide range of specialized fitness programs</p>
+        </div>
+
+        <div class="programs-grid">
+          <div class="program-card" data-aos="fade-up">
+            <div class="program-image">
+              <img src="pexels-victorfreitas-841130.jpg" alt="Strength Training" loading="lazy">
+            </div>
+            <div class="program-content">
+              <h3>Strength Training</h3>
+              <p>Build muscle, increase strength, and improve overall fitness</p>
+              <a href="#contact" class="program-btn">Learn More</a>
+            </div>
+          </div>
+
+          <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="program-image">
+              <img src="pexels-victorfreitas-931324.jpg" alt="Cardio Fitness" loading="lazy">
+            </div>
+            <div class="program-content">
+              <h3>Cardio Fitness</h3>
+              <p>Improve endurance and cardiovascular health</p>
+              <a href="#contact" class="program-btn">Learn More</a>
+            </div>
+          </div>
+
+          <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="program-image">
+              <img src="pexels-olly-917732.jpg" alt="Yoga & Wellness" loading="lazy">
+            </div>
+            <div class="program-content">
+              <h3>Yoga & Wellness</h3>
+              <p>Find balance with our holistic wellness programs</p>
+              <a href="#contact" class="program-btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="trainers-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Expert Trainers</h2>
+                <p>Work with the best in the industry</p>
+            </div>
+
+            <div class="trainers-grid">
+                <div class="trainer-card" data-aos="fade-up">
+                    <div class="trainer-image">
+                        <img src="media/pexels-pavel-danilyuk-6295969.jpg" alt="John Smith - Head Trainer" loading="lazy">
+                        <div class="trainer-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>John Smith</h3>
+                        <span class="trainer-title">Head Trainer</span>
+                        <p>Certified strength and conditioning specialist with 10+ years experience</p>
+                    </div>
+                </div>
+
+                <div class="trainer-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trainer-image">
+                        <img src="media/pexels-joshua-brown-173188224-13197535.jpg" alt="Sarah Johnson - Yoga Specialist" loading="lazy">
+                        <div class="trainer-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Sarah Johnson</h3>
+                        <span class="trainer-title">Yoga Specialist</span>
+                        <p>Certified yoga instructor specializing in power yoga and meditation</p>
+                    </div>
+                </div>
+
+                <div class="trainer-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trainer-image">
+                        <img src="media/pexels-pixabay-260447.jpg" alt="Mike Davis - CrossFit Coach" loading="lazy">
+                        <div class="trainer-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Mike Davis</h3>
+                        <span class="trainer-title">CrossFit Coach</span>
+                        <p>Level 3 CrossFit trainer with competitive athletics background</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Membership Plans</h2>
+                <p>Choose the perfect plan for your fitness journey</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">49</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Access to Gym Floor</li>
+                        <li><i class="fas fa-check"></i> Basic Equipment Usage</li>
+                        <li><i class="fas fa-check"></i> Locker Room Access</li>
+                        <li><i class="fas fa-check"></i> Free Wifi</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Personal Training</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Group Classes</li>
+                    </ul>
+                    <a href="#contact" class="pricing-btn">Get Started</a>
+                </div>
+
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">89</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> All Basic Features</li>
+                        <li><i class="fas fa-check"></i> Unlimited Group Classes</li>
+                        <li><i class="fas fa-check"></i> 2 PT Sessions/Month</li>
+                        <li><i class="fas fa-check"></i> Nutrition Consultation</li>
+                        <li><i class="fas fa-check"></i> Access to All Facilities</li>
+                        <li><i class="fas fa-check"></i> Mobile App Access</li>
+                    </ul>
+                    <a href="#contact" class="pricing-btn featured">Get Started</a>
+                </div>
+
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3>Elite</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">149</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> All Premium Features</li>
+                        <li><i class="fas fa-check"></i> Unlimited PT Sessions</li>
+                        <li><i class="fas fa-check"></i> Custom Meal Plans</li>
+                        <li><i class="fas fa-check"></i> Recovery Suite Access</li>
+                        <li><i class="fas fa-check"></i> Priority Booking</li>
+                        <li><i class="fas fa-check"></i> VIP Lounge Access</li>
+                    </ul>
+                    <a href="#contact" class="pricing-btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Success Stories</h2>
+                <p>What our members say about us</p>
+            </div>
+
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="media/man-2378959_1920.jpg" alt="Emily Parker" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Elite Fitness transformed my life. Lost 30 pounds and gained confidence. The trainers are exceptional and the community is incredibly supportive."</p>
+                        <div class="testimonial-author">
+                            <h3>Emily Parker</h3>
+                            <span>Member since 2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-2.jpg" alt="James Wilson" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Best gym I've ever been to. The personal training sessions are worth every penny. Achieved my fitness goals in just 6 months!"</p>
+                        <div class="testimonial-author">
+                            <h3>James Wilson</h3>
+                            <span>Member since 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-3.jpg" alt="Sarah Thompson" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The yoga classes here are amazing! The instructors are knowledgeable and the facilities are always clean. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <h3>Sarah Thompson</h3>
+                            <span>Member since 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Facility</h2>
+                <p>Take a tour of our premium fitness center</p>
+            </div>
+
+            <div class="gallery-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="gym">Gym Floor</button>
+                <button class="filter-btn" data-filter="cardio">Cardio Zone</button>
+                <button class="filter-btn" data-filter="yoga">Yoga Studio</button>
+            </div>
+
+            <div class="gallery-grid" data-aos="fade-up">
+                <div class="gallery-item" data-category="gym">
+                    <img src="images/gallery-1.jpg" alt="Modern gym equipment" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>State-of-the-art Equipment</h3>
+                            <p>Premium fitness machines for optimal results</p>
+                            <button class="gallery-zoom" aria-label="View larger image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cardio">
+                    <img src="images/gallery-2.jpg" alt="Cardio equipment zone" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Cardio Zone</h3>
+                            <p>Latest cardio machines with entertainment systems</p>
+                            <button class="gallery-zoom" aria-label="View larger image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="yoga">
+                    <img src="images/gallery-3.jpg" alt="Yoga and meditation studio" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Yoga Studio</h3>
+                            <p>Peaceful environment for yoga and meditation</p>
+                            <button class="gallery-zoom" aria-label="View larger image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="gym">
+                    <img src="images/gallery-4.jpg" alt="Free weights area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Free Weights Area</h3>
+                            <p>Comprehensive selection of free weights</p>
+                            <button class="gallery-zoom" aria-label="View larger image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>We're here to help you achieve your fitness goals</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <address>
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <h3>Location</h3>
+                <p>123 Fitness Avenue, Gym City, Country</p>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <h3>Phone</h3>
+                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <h3>Email</h3>
+                <a href="mailto:info@elitefitness.com">info@elitefitness.com</a>
+              </div>
+            </address>
+          </div>
+
+          <form class="contact-form" novalidate data-netlify="true" name="contact">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required aria-required="true">
+              <label for="name">Your Name</label>
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required aria-required="true">
+              <label for="email">Your Email</label>
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <select id="plan" name="plan" required aria-required="true">
+                <option value="">Select Membership Plan</option>
+                <option value="basic">Basic Plan</option>
+                <option value="premium">Premium Plan</option>
+                <option value="elite">Elite Plan</option>
+              </select>
+              <label for="plan">Membership Plan</label>
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" required aria-required="true"></textarea>
+              <label for="message">Your Message</label>
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="primary-button">
+              <span>Send Message</span>
+              <span class="loading-indicator" aria-hidden="true"></span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=YOUR-EMBED-URL" title="Elite Fitness Location"
+            width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cookie Consent -->
+  <div class="cookie-consent" role="alert" aria-live="polite" hidden>
+    <div class="cookie-content">
+      <p>We use cookies to enhance your experience and analyze our website traffic. By clicking "Accept," you consent to our use of cookies.</p>
+      <div class="cookie-buttons">
+        <button class="accept-cookies primary-button">Accept All</button>
+        <button class="customize-cookies secondary-button">Customize</button>
+        <a href="/privacy-policy" class="cookie-policy">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Scroll back to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section brand-section">
+          <h2 class="footer-logo">ELITE FITNESS</h2>
+          <p>Transform your life with premium fitness training and world-class facilities.</p>
+          <div class="social-links">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Programs</h3>
+          <ul class="footer-links">
+            <li><a href="#strength">Strength Training</a></li>
+            <li><a href="#cardio">Cardio Fitness</a></li>
+            <li><a href="#yoga">Yoga Classes</a></li>
+            <li><a href="#crossfit">CrossFit</a></li>
+            <li><a href="#personal">Personal Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <address class="footer-contact">
+            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Fitness Avenue, Gym City, Country</p>
+            <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+            <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@elitefitness.com">info@elitefitness.com</a></p>
+            <p><i class="fas fa-clock" aria-hidden="true"></i> Open 24/7</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> Elite Fitness. All rights reserved.</p>
+          <ul class="footer-legal">
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/sitemap">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal" id="trainerModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-content" role="document">
+      <button class="close-modal" aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="trainer-bio-content"></div>
+    </div>
+  </div>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FitnessCenter",
+      "name": "Elite Fitness",
+      "image": "https://your-domain.com/images/gym.jpg",
+      "description": "Premium gym and fitness center offering world-class training and facilities",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Fitness Avenue",
+        "addressLocality": "Gym City",
+        "addressCountry": "Country"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "YOUR_LATITUDE",
+        "longitude": "YOUR_LONGITUDE"
+      },
+      "openingHours": "Mo-Su 00:00-24:00",
+      "telephone": "+15551234567",
+      "email": "info@elitefitness.com",
+      "sameAs": [
+        "https://facebook.com/elitefitness",
+        "https://instagram.com/elitefitness",
+        "https://twitter.com/elitefitness",
+        "https://linkedin.com/company/elitefitness"
+      ]
+    }
+  </script>
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" aria-hidden="true"></div>
+
+  <!-- Image Preview Modal -->
+  <div class="modal" id="imageModal" role="dialog" aria-labelledby="imageModalTitle" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close modal">×</button>
+      <img src="" alt="" id="modalImage">
+    </div>
+  </div>
+</body>
+
+</html>
